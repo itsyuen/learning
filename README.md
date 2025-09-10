@@ -1,4 +1,4 @@
-# learning
+# learning repo's README.md
 
 [![hackmd-github-sync-badge](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q/badge)](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q)
 
@@ -11,3 +11,8 @@ Let me test with this currnet linked hackmd.io
 
 2025-09-10
 Peter Chang
+
+This file is now maintained directly inside hackmd, and push-pull on the "learning repo".
+
+I am trying to link another hackmd.io file, that will be the reposotories that is the NAS directories and nameing convention for my personal databse usage!!!
+
