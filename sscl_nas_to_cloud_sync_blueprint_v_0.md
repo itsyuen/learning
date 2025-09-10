@@ -14,12 +14,18 @@
 - **Cross‑platform safety:** Filenames must be Windows/macOS/Linux compatible.
 - **Short, meaningful, consistent.**
 
-[REVIEW THIS]
+[重點]
+* NAS為核心資料，所有的網路雲端連結：google-ME, google-NTUST, ms-NTUST 只是用來雲端備份或是對外合作交流用。所有資料夾在NAS端都預設為 Encrypted share folders 有加密。
+* 預防核心被無心竄改，基本預設內訂為「上傳型單向性syncornization同步」(NAS->cloud)，除非因為外部合作特別需要兩方面同時修改內容才「雙向同步」
+* 跨系統通用的安全性：因為檔案會跨 Ubuntu/Windows/OSx所以一定要一致取檔名
+* 短檔名；有用而且一致
 
 ---
 
 ## 2) Filename & Folder Naming Standard
 **Goals:** cross‑platform safe, human‑readable, machine‑sortable.
+
+**目標：** 可跨平台、人眼可懂、電腦可自動分類抓取
 
 ### 2.1 Length Budgets
 - **File name (base + extension):** ≤ **80** chars
@@ -50,7 +56,17 @@
 - `course-me1132-2025f_lab03-inverted-pendulum_v01.pptx`
 - `dataset_battery-cycling_v02_2025-08-21.csv`
 
-[REVIEW THIS]
+[重點翻譯]
+* 檔名少於80 char 資料夾少於 40 char，大約十三到十六個左右的英文字當檔名，六七個字當作資料夾名稱。
+* 使用字元為 0~9, a~z, 橫線- 與底線_ 當然還點 .
+* 基本上全小寫，現在資料夾內有大寫的就算了，使用 **kebab-case** 字-串連 **snake_case** 檔案_版本。
+* 日期放最後（避免一開始就始用數字；MATLAB不允許）格式為 yyyy-mm-dd 所以一致的檔名為：**<分類檔名代號等>_<檔案-解釋>_v02_2025-09-10.ext**作為標準形式
+*  建議檔名前面與子目錄`/project-dna`, `/module-thermal`, `/code-matlab-dcmotor`, `/dataset-cordon-cocoput`, '/course-embedded system' 這一類型的任務資料夾，做全面的配合如：
+    * prj-dna-paper-draft_v01_2025-10-10.tex
+    * mod-thermal-physical-matlab-simulation_v03_2025-09-13.docx
+    * crs-embedded-system-class-admin-syllabus_v01_2025-09-09.pdf
+    * data-cocoput-extract-dna-optimize-re(sult_v01_2025-04-19.txt
+* 將來或許會有 ME1141 這種學年度使用的代號(token)，將來要回來參考此設計方法，例如學生名，作業名稱等等。
 
 ---
 
