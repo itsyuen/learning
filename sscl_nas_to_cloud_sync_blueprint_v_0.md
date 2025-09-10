@@ -1,6 +1,10 @@
 # SSCL NAS ↔ Cloud Sync Blueprint (v0.1)
 
+2025-09-10 管理NAS新增檔案命名原則與新型態整理方法與基本子目錄模版
+
 **Scope:** Naming standards, folder templates, cloud‑sync mapping, archive triage, CLI preflight checks, and migration playbook for encrypted shares: `/research`, `/teaching`, `/references`, `/personal`, `/archive`.
+
+**目標：** 檔案命名標準；資料夾範本；雲端連結對應；存檔檢傷分類；命令列檢查以及如何有效放置資料於：`/research`, `/teaching`, `/references`, `/personal`, `/archive`工作子目錄中。 
 
 ---
 
