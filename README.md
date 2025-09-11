@@ -22,3 +22,5 @@ This file is now maintained directly inside hackmd, and push-pull on the "learni
 I am trying to link another hackmd.io file, that will be the reposotories that is the NAS directories and nameing convention for my personal databse usage!!!
 
 [NAS naming convention](sscl_nas_to_cloud_sync_blueprint_v_0.md)
+
+Changing a little through VS code..
