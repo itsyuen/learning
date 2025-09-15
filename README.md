@@ -6,7 +6,10 @@
 
 Current project for MATLAB integration and code sources for paper number 1.
 
+added /src for .m file.... check with Jack's codes...
+added /scripts and paper01.mlx, for draft on script file
 
+will add /doc on NAS for latex file export, want to .gitignore
 
 
 
