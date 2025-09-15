@@ -1,5 +1,8 @@
 # SSCL NAS ↔ Cloud Sync Blueprint (v0.1)
 
+[![hackmd-github-sync-badge](https://hackmd.io/H6Idt0JuQfGVrmnx-CuQCQ/badge)](https://hackmd.io/H6Idt0JuQfGVrmnx-CuQCQ)
+
+
 2025-09-10 管理NAS新增檔案命名原則與新型態整理方法與基本子目錄模版
 
 **Scope:** Naming standards, folder templates, cloud‑sync mapping, archive triage, CLI preflight checks, and migration playbook for encrypted shares: `/research`, `/teaching`, `/references`, `/personal`, `/archive`.
