@@ -97,5 +97,43 @@ ENV/
 # mkdocs documentation
 /site
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+
 # mypy
 .mypy_cache/
+
+# MATLAB
+*.asv
+*.autosave
+*.slxc
+slprj/
+*.mex*
+
+# Build / temp
+build/
+devel/
+install/
+dist/
+*.o
+*.obj
+*.exe
+*.bin
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# IDE
+.vscode/
+.idea/
+
+
+# Misc
+*.log
+*.tmp
+*.DS_Store
+Thumbs.db

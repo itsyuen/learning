@@ -1,10 +1,16 @@
 # learning repo's README.md
-2025-09-13 Peter Chang
+2025-09-15 Peter Chang
 
 [![hackmd-github-sync-badge](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q/badge)](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q)
 
-學習在 hackmd.io 當中，如何使用加圖片的於github上的子目錄。先在local drive 新增子目錄，嘗試放一些圖片，然後看看怎樣貼上！！
 
+Current project for MATLAB integration and code sources for paper number 1.
+
+
+
+
+
+------------------- past data --------------------------
 Now syncing through HackMD.io, using user tsyuen@gmail.com.
 
 All detailed management is documented here, along with the most important "leaning to survive lab", using the brand new toolchian:
