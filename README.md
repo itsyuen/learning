@@ -4,7 +4,7 @@
 [![hackmd-github-sync-badge](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q/badge)](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q)
 
 
-Current project for MATLAB integration and code sources for paper number 1.
+Current project for MATLAB integration and code sources for paper number 1. from learning the basics.
 
 added /src for .m file.... check with Jack's codes...
 added /scripts and paper01.mlx, for draft on script file
