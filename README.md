@@ -1,23 +1,17 @@
 ---
-title: learning
-
+title: working now, learning on the way
 ---
 
 # learning repo's README.md
-2025-09-15 Peter Chang
+2026-03-05 Peter Chang update
 
-[![hackmd-github-sync-badge](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q/badge)](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q)
-
-
-Current project for MATLAB integration and code sources for paper number 1. from learning the basics.
+Current project for MATLAB integration and code sources for paper number 1. from learning the basics, now on adaptive
 
 added /src for .m file.... check with Jack's codes...
 added /scripts and paper01.mlx, for draft on script file
 
 will add /doc on NAS for latex file export, want to .gitignore
-
-
-
+---
 ------------------- past data --------------------------
 Now syncing through HackMD.io, using user tsyuen@gmail.com.
 
@@ -35,6 +29,10 @@ currently add all figures here on GitHub.
 
 This file is now maintained directly inside hackmd, and push-pull on the "learning repo".
 
+added push/pull request and also fast git commands.. inside bash
+
 I am trying to link another hackmd.io file, that will be the reposotories that is the NAS directories and nameing convention for my personal databse usage!!!
 
-[NAS naming convention][NAS naming convention](https://github.com/itsyuen/learning/blob/master/sscl_nas_to_cloud_sync_blueprint_v_0.md)
+[NAS naming convention][NAS naming convention](https://github.com/itsyuen/learning/blob/master/notes/sscl_nas_to_cloud_sync_blueprint_v_0.md)
+
+[![hackmd-github-sync-badge](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q/badge)](https://hackmd.io/TlpUVPNyRrKUY5LOcNEJ0Q)
