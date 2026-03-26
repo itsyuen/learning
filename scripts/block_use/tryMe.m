@@ -10,11 +10,11 @@ end
 
 outputArg1 = inputArg1;
 
-% if inputArg1 > 0
-%     outputArg2 = 1;
-% else
-%     outputArg2 = 0;
-% end
+if inputArg1 > 0
+    disp('input is greater then zero');
+else
+    disp('input is less then zero');
+end
 
 outputArg2 = prev;
 prev = (inputArg1 > 0);
