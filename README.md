@@ -20,6 +20,18 @@ This `learning` repo will be used as staging place for later `teaching` and `des
 - Now syncing through HackMD.io, using user tsyuen@gmail.com.
 - This is meant to be for `teaching` and `desktop-tutorial` as hackmd.io will inherit all the `README.md` that is embedded in the `teaching` and `desktop-tutorial` directories
 
+## current directory structure
+```text
+learning/
+├── README.md
+├── matlab/
+|     ├── scripts/
+|     └── sources/
+├── python/
+├── figures/
+└── notes/
+```
+
 ### old archive that is in the past data
 All detailed management is documented here, along with the most important "leaning to survive lab", using the brand new toolchian:
 
