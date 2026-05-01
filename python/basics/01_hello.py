@@ -21,4 +21,4 @@ y = 20
 z = x + y
 print("The sum of x and y is:", z)
 
-# using variable name to construct a string
+# Python also has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).
