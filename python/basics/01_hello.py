@@ -51,6 +51,9 @@ print("they are:", partnumber)
 partnumber = wholenumber[6:]
 print("size of partnumber list for [6:]: ", len(partnumber))
 print("they are:", partnumber)
+partnumber = wholenumber[-3:]
+print("size of partnumber list for [-3:]: ", len(partnumber))
+print("they are:", partnumber)
 
 # replacing or deleting number in lists
 print("original wholenumber:", wholenumber)

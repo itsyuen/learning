@@ -11,8 +11,10 @@ following basic [informal tutorial](https://docs.python.org/3/tutorial/) from py
 ## objectives
 
 1. basic input/output
+    - numbers, string, and lists
+    - `print("How to use:", namestring)`
 2. Variables and Types
-    -  `int`
+    - `int`
     - `float`
     - `string`
     - `bool`
