@@ -5,6 +5,7 @@
 This repos is dedicated to the paper writing on adaptive jacobianless controll verification.
 
 ## current directory
+```text
 adaptive/
 ├── sources/
 │   ├── FAT1/
@@ -15,6 +16,7 @@ adaptive/
 ├── paper1.mlx
 ├── working_20251001_publish.mlx
 └── README.md
+```
 
 ## active steps
 0. modeling RR planar manipulator dynamics 
