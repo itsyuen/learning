@@ -64,3 +64,15 @@ partnumber = partnumber[0:1]
 print("the self cut partnumber[0:1] list is now: ", partnumber)
 print("while cutting only two adjecent index like list[1:2],"
       "feels just like list[1] but the former one is a list, and the later one is a number call!")
+
+# appending list for string objects
+rgb = ["Red", "Green", "Blue"]
+rgba = rgb
+rgba.append("alph")
+print(rgb)  # they are the same thing, no data copies
+
+a = ['a','b','c']
+n = [1, 2, 3]
+x = [a, n]
+print(x[0])
+print(x[0][1])
