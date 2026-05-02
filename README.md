@@ -1,5 +1,5 @@
 # learning repo's README.md
-2026-05-01 Peter Chang update
+2026-05-01 *Peter Chang* update
 
 Current learning directory for both MATLAB/cpp/python and many other learning opertunities for me. This repo will be kind of personal growth activity traces.
 
