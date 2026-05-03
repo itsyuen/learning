@@ -9,12 +9,12 @@ This repos is dedicated to the paper writing on adaptive jacobianless controll v
 adaptive/
 ├── figures/
 ├── sources/
-│   ├── FAT1/
+│   ├── directories of source files/
 │   ├── torque_cal/
-│   ├── Computed Torque Method.docx
-│   ├── FAT_based_Adaptive_1.docx
+│   ├── word document files.docx
+│   ├── thesis.pdf
 │   └── FromJack.md
-├── paper1.mlx
+├── references/ 
 ├── working_20251001_publish.mlx
 └── README.md
 ```

@@ -19,4 +19,10 @@ test and check it's performance.
 - code gen with .slx file for in-direct ROS2 system at high level
 
 ## steps
- 
+
+### package manager notes
+- Python has pip
+- MATLAB has Add-ons
+- ROS2 has apt/rosdep/colcon ecosystem
+- Node.js has npm 
+
