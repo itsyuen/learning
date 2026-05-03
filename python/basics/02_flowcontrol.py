@@ -5,5 +5,59 @@ while a < 10:   # while loop <, >, == , <=, >=, and !=
     print(a)    # indent body
     a, b = b, a+b   # no need for end
 
+## iterate through packages
+packages = ["pkg_msgs", "pkg_driver", "pkg_control"]
 
+for pkg in packages:
+    print("Building", pkg)  # used a "pkg" index
 
+## success/failure if statements
+
+result = True
+
+if result:
+    print("Build passed")
+else:
+    print("Fix erroors")
+
+## waiting/ polling loops (while)
+
+ready  = False
+count = 0
+
+while not ready and count < 5:
+    print("checking...")
+    count += 1
+
+## Exericses
+
+### Ex1. build selected packages
+
+pkgs = ["msgs", "driver", "planner"]
+
+for p in pkgs:
+    print(f"colcon build --packages-select {p}")    # f inside print()
+
+### Ex2. skip broken package
+pkgs = ["msgs", "broken_pkg", "planner"]
+
+for p in pkgs:
+    if p == "broken_pkg":
+        continue
+    print("Building", p)
+
+### Ex3. stop if critical failure
+errors = 0
+
+for i in range(5):
+    if i == 3:
+        errors += 1
+
+if errors > 0:
+    print("Do not deploy")
+else:
+    print("Safe to continue")
+
+### Ex4.
+
+### Ex5.
