@@ -7,6 +7,7 @@ This repos is dedicated to the paper writing on adaptive jacobianless controll v
 ## current directory
 ```text
 adaptive/
+├── figures/
 ├── sources/
 │   ├── FAT1/
 │   ├── torque_cal/
