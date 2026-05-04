@@ -18,7 +18,7 @@ result = True
 if result:
     print("Build passed")
 else:
-    print("Fix erroors")
+    print("Fix errors")
 
 ## waiting/ polling loops (while)
 
@@ -58,6 +58,24 @@ if errors > 0:
 else:
     print("Safe to continue")
 
-### Ex4.
+### Ex4. retry build until success
+
+attempt = 0
+success = False
+
+while attempt < 3 and not success:
+    print(f"Attempt {attempt+1}")
+
+    if attempt == 2:
+        success = True
+
+    attempt +=1
+
+if success:
+    print("Build succeed")
+else:
+    print("Build failed")
 
 ### Ex5.
+
+
