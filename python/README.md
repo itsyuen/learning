@@ -31,3 +31,31 @@ python/
 
 
 ---
+# Python for ROS2 Engineers
+## 3-Week Practical Curriculum
+### NTUST / SSCL Direction
+
+---
+
+# Philosophy
+
+This course is NOT designed to:
+- master all Python syntax
+- become a software engineer
+- memorize libraries
+
+Instead, this course teaches Python as:
+- a robotics glue language
+- a ROS2 orchestration tool
+- a bridge between MATLAB, Linux, ROS2, and embedded systems
+
+Core idea:
+
+```text
+MATLAB thinking
+    ↓
+Python orchestration
+    ↓
+ROS2 distributed systems
+    ↓
+Embedded control
