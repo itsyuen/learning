@@ -76,6 +76,6 @@ if success:
 else:
     print("Build failed")
 
-### Ex5.
+### Ex5. using operator of +, .append(), .extend() on lists and strings
 
 
