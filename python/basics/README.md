@@ -58,3 +58,29 @@ Numpy, pandas, plotting, AI tools
 - [ ] `controller.py`
 
 ### practice for short 15 minutes everyday
+
+## Project Objective 
+
+PYthon Basics Through PS4 Controller Integration
+
+Use a PS4 controller as a practical Python integration project to connect the core concepts of:
+
+- variables
+- lists
+- dictionaries
+- loops
+- functions
+- classes
+
+The goal is not only to “learn Python syntax,” but to understand how Python can glue real hardware input into a larger robotics or control-system workflow.
+
+In this project, the PS4 controller becomes the input device. Python reads button and joystick states, stores them in lists and dictionaries, processes them through loops and functions, and finally organizes the logic into classes.
+
+This prepares the foundation for later integration with:
+
+- MATLAB
+- ROS 2
+- joystick nodes
+- robot teleoperation
+- motor-control commands
+- embedded controller interfaces
