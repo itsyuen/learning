@@ -40,7 +40,7 @@ They are similar to:
 
 ## 2. Message Type Namespace Hierarchy
 
-### Example
+### Example2
 
 ```text
 geometry_msgs/msg/Twist
@@ -72,17 +72,18 @@ Meaning:
 
 - package = geometry_msgs
 - interface category = msg
-- type name = Twist 
+- type name = Twist
 
 ## 3. Message Field Stucture
 
-### Example
+### Example3
 
 ```Bash
 ros2 interface show geometry_msgs/msg/Twist
 ```
 
 Output:
+
 ```Bash
 Vector3 linear
 Vector3 angular
@@ -186,8 +187,8 @@ are:
 | Fiesystem Idea | ROS 2 Equivalent |
 | :--- | :--- |
 | folder path | topic namsapce |
-| file type   | message type   |
-| file contents| message fields|
+| file type | message type |
+| file contents | message fields |
 
 ---
 
@@ -269,4 +270,3 @@ But:
 
 - C++ namespaces organize code symbols
 - ROS namespaces organize runtime communication
-
