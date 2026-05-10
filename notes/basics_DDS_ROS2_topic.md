@@ -510,10 +510,11 @@ Nodal/message lifecycle service request (to make sure some state machine respons
     - lifecycle_msgs/srv/GetAvailableTransitions
     - lifecycle_msgs/srv/GetState
 ```
-log demostration service message (to show request to log thing?)
+
+log demostration service message (to make a request to configure loging things?)
 
 ```text
-    logging_demo/srv/ConfigLogger
+    - logging_demo/srv/ConfigLogger
 ```
 
 Map services messages (request to act on map? learn map how to use)
@@ -536,52 +537,93 @@ Navigation service message (request to get something about map? note trajectory 
     - nav_msgs/srv/SetMap
 ```
 
-    pcl_msgs/srv/UpdateFilename
+PCL message service request (only one filename update, so may be PC local?)
 
-    rcl_interfaces/srv/DescribeParameters
-    rcl_interfaces/srv/GetLoggerLevels
-    rcl_interfaces/srv/GetParameterTypes
-    rcl_interfaces/srv/GetParameters
-    rcl_interfaces/srv/ListParameters
-    rcl_interfaces/srv/SetLoggerLevels
-    rcl_interfaces/srv/SetParameters
-    rcl_interfaces/srv/SetParametersAtomically
+```text
+    - pcl_msgs/srv/UpdateFilename
+```
+Ros Client Library (important!) service message (node related!!!)
 
-    rosbag2_interfaces/srv/Burst
-    rosbag2_interfaces/srv/GetRate
-    rosbag2_interfaces/srv/IsDiscoveryRunning
-    rosbag2_interfaces/srv/IsPaused
-    rosbag2_interfaces/srv/Pause
-    rosbag2_interfaces/srv/Play
-    rosbag2_interfaces/srv/PlayNext
-    rosbag2_interfaces/srv/Record
-    rosbag2_interfaces/srv/Resume
-    rosbag2_interfaces/srv/Seek
-    rosbag2_interfaces/srv/SetRate
-    rosbag2_interfaces/srv/Snapshot
-    rosbag2_interfaces/srv/SplitBagfile
-    rosbag2_interfaces/srv/StartDiscovery
-    rosbag2_interfaces/srv/Stop
-    rosbag2_interfaces/srv/StopDiscovery
-    rosbag2_interfaces/srv/TogglePaused
+*Note parameters are requested here!!!*
 
+```text
+    - rcl_interfaces/srv/DescribeParameters
+    - rcl_interfaces/srv/GetLoggerLevels
+    - rcl_interfaces/srv/GetParameterTypes
+    - rcl_interfaces/srv/GetParameters
+    - rcl_interfaces/srv/ListParameters
+    - rcl_interfaces/srv/SetLoggerLevels
+    - rcl_interfaces/srv/SetParameters
+    - rcl_interfaces/srv/SetParametersAtomically
+```
+ROS bag service request message (check how `bags` are handled?)
+
+- rosbag2_interfaces/srv/
+
+<details>
+<summay>Click to expand</summary>
+
+```text
+    - rosbag2_interfaces/srv/Burst
+    - rosbag2_interfaces/srv/GetRate
+    - rosbag2_interfaces/srv/IsDiscoveryRunning
+    - rosbag2_interfaces/srv/IsPaused
+    - rosbag2_interfaces/srv/Pause
+    - rosbag2_interfaces/srv/Play
+    - rosbag2_interfaces/srv/PlayNext
+    - rosbag2_interfaces/srv/Record
+    - rosbag2_interfaces/srv/Resume
+    - rosbag2_interfaces/srv/Seek
+    - rosbag2_interfaces/srv/SetRate
+    - rosbag2_interfaces/srv/Snapshot
+    - rosbag2_interfaces/srv/SplitBagfile
+    - rosbag2_interfaces/srv/StartDiscovery
+    - rosbag2_interfaces/srv/Stop
+    - rosbag2_interfaces/srv/StopDiscovery
+    - rosbag2_interfaces/srv/TogglePaused
+```
+
+</details>
+
+Sensor service request message (only on camera, others seem to be `publisher`)
+
+```text
     sensor_msgs/srv/SetCameraInfo
+```
 
+Standard service request messages (seems like only type def?)
+
+```text
     std_srvs/srv/Empty
     std_srvs/srv/SetBool
     std_srvs/srv/Trigger
+```
 
+Transform Framework 2 service request message (need to learn convention)
+
+```text
     tf2_msgs/srv/FrameGraph
+```
+Turtle sim tutorial service request message (more like topic specific for turtle sim)
 
+```text
     turtlesim/srv/Kill
     turtlesim/srv/SetPen
     turtlesim/srv/Spawn
     turtlesim/srv/TeleportAbsolute
     turtlesim/srv/TeleportRelative
+```
+Type description interface standard service request message (special?)
 
+```text
     type_description_interfaces/srv/GetTypeDescription
+```
 
+Visualization service request message (check visulization in "message" list)
+
+```text
     visualization_msgs/srv/GetInteractiveMarkers
+```
 
 ### Action list
 
@@ -589,19 +631,16 @@ Actions:
 
 ```text
     - action_tutorials_interfaces/action/Fibonacci
-
     - example_interfaces/action/Fibonacci
-
     - tf2_msgs/action/LookupTransform
-
     - turtlesim/action/RotateAbsolute
 ```
 
 ## There is no turtle1/cmd_vel
 
-This is a /topic!!! 
+This is a /topic!!! But some `messages`, `service` is there in our interface list!!!
 
-This self defined "message" like sturcture is a channel, the system operator made, so that it composes of "serval messages" to become one topic!!! that the nodes talk to each other!!
+This user-defined "message" like sturcture is a channel, the system operator made, so that it composes of "serval messages" to become one topic!!! that the nodes talk to each other!!
 
 it looks like message/service/action, but no! it is a *TOPIC*
 
