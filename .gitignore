@@ -137,3 +137,7 @@ dist/
 *.tmp
 *.DS_Store
 Thumbs.db
+desktop.ini
+Desktop.ini
+Thumbs.db
+.DS_Store
