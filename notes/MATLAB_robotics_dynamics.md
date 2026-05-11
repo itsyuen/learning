@@ -25,8 +25,8 @@ $$
 
 \begin{bmatrix}
 q \\
-\dot{q} 
-\end{bmatrix} = 
+\dot{q}
+\end{bmatrix} =
 \begin{bmatrix}
 \dot{q} \\
 M(q)^{-1}\left( -C(q,\dot{q})\dot{q}-G(q)-J(q)^Tf_{ext}+\tau\right)
@@ -37,13 +37,19 @@ i.e. this is $M(q)\ddot{q}+C(q,\dot{q})\dot{q}+G(q)+J(q)^Tf_{ext} = \tau$ in sta
 
 Notice all the moment of inertia is calculated in MATLAB with 
 $$
-\mathbb{I} = 
+\mathbb{I} =
 \begin{bmatrix}
 I_{xx} & I_{xy} & I_{xz} \\
 I_{yx} & I_{yy} & I_{yz} \\
-I_{zx} & I_{zy} & I_{zz} 
+I_{zx} & I_{zy} & I_{zz}
 \end{bmatrix}
 $$
 with standard definition.
 
-### Adaptive control withoug Jacobian transform paper
+### make sure to know derivation from review paper
+
+[link to local pdf file in repo](./1986_Adaptive_control_of_mechanical_manipulators.pdf)
+
+## Adaptive control withoug Jacobian transform paper
+
+more to come.
