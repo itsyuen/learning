@@ -1,6 +1,6 @@
-# How to tranform MATLAB robotics toolbox to Movit2
+# How to tranform MATLAB robotics toolbox to MoveIt2
 
-*Peter Chang*
+Written by *Peter Chang* on 2026/05/11
 
 ```text
 MATLAB Robotics Toolbox
@@ -22,7 +22,7 @@ THEN Kinova Kortex
 - MATLAB: robotics toolbox, ROS toolbox
 - system thinking: DDS ROS topic to RTOS on STM32
 
-### Building all the above into 
+### Building all the above into
 
 ```text
 ROS2 middleware intuition
@@ -93,15 +93,16 @@ planner
 
 ### Finally Kinova Kortex
 
-The following is the full Kortex Github: [link](https://github.com/Kinovarobotics/ros2_kortex?utm_source=chatgpt.com)
+The following is the full Kortex Github: [link to Kortex github](https://github.com/Kinovarobotics/ros2_kortex?utm_source=chatgpt.com)
 
-And it's associated API documentation: [Link](https://docs.kinovarobotics.com/?utm_source=chatgpt.com)
+And it's associated API documentation: [Link to kortex document on API](https://docs.kinovarobotics.com/?utm_source=chatgpt.com)
 
 Make sure gone through rclcpp/rclpy for ROS2 node understanding and MoveIt2 common topics for robotics control!!!
 
 ## MoveIt2 mental model
 
 A robot arm alone only knows:
+
 > - motor positions
 > - velocities
 > - torques
@@ -119,48 +120,48 @@ this is full `MATLAB robotics toolbox planning used with implementation methodol
 
 ### all done with
 
-| Function               | Meaning                           | 
-|------------------------|-----------------------------------| 
-| Motion Planning        | Compute valid robot motion        | 
-| Inverse Kinematics     | Solve end-effector poses          | 
-| Collision Check        | Avoid self/world collisions       | 
-| Trajectory Generation  | Smooth motion control             | 
-| Planning Scene         | Understand obstacles              | 
-| Servoing               | Real-time Cartesian control       | 
-| Grasp Planning         | Pick-and-place                    | 
-| Controller Integration | Send trajectories to hardware     | 
+Function               | Meaning
+-----------------------|----------------------------  
+Motion Planning        | Compute valid robot motion
+Inverse Kinematics     | Solve end-effector poses
+Collision Check        | Avoid self/world collisions
+Trajectory Generation  | Smooth motion control
+Planning Scene         | Understand obstacles
+Servoing               | Real-time Cartesian control
+Grasp Planning         | Pick-and-place
+Controller Integration | Send trajectories to hardware
 
-The following is the github link to MoveIt2: [link](https://github.com/moveit/moveit2?utm_source=chatgpt.com)
+The following is the github link to MoveIt2: [link to MoveIt2 github](https://github.com/moveit/moveit2?utm_source=chatgpt.com)
 
-The following is the documentation link to MoveIt2: [link](https://moveit.picknik.ai/main/index.html)
+The following is the documentation link to MoveIt2: [link to MOveIt2 documentation webpage](https://moveit.picknik.ai/main/index.html)
 
-The following is the tutorial link to MoveIt2: [link](https://moveit.picknik.ai/main/doc/tutorials/getting_started/getting_started.html?utm_source=chatgpt.com)
+The following is the tutorial link to MoveIt2: [link to MovIt2 tutorial, part of documentation](https://moveit.picknik.ai/main/doc/tutorials/getting_started/getting_started.html?utm_source=chatgpt.com)
 
 Be sure to master ros2 colcon with `rclpy` and `rclcpp` then use them!!!
 
 ### core packages used among all nodes
 
-| Package                  | Purpose                     |
-| ------------------------ | --------------------------- |
-| `moveit_core`            | planning core               |
-| `move_group`             | main planning node          |
-| `moveit_msgs`            | ROS interfaces              |
-| `moveit_servo`           | realtime Cartesian servoing |
-| `moveit_visual_tools`    | RViz interaction            |
-| `moveit_ros_planning`    | ROS integration             |
-| `moveit_configs_utils`   | robot setup                 |
-| `moveit_setup_assistant` | generate configs            |
+Package                  | Purpose
+------------------------ | ---------------------------
+`moveit_core`            | planning core
+`move_group`             | main planning node
+`moveit_msgs`            | ROS interfaces
+`moveit_servo`           | realtime Cartesian servoing
+`moveit_visual_tools`    | RViz interaction
+`moveit_ros_planning`    | ROS integration
+`moveit_configs_utils`   | robot setup
+`moveit_setup_assistant` | generate configs
 
 ### KEY ROS topics used
 
-| Topic                                           | Meaning            |
-| ----------------------------------------------- | ------------------ |
-| `/joint_states`                                 | actual robot state |
-| `/tf`                                           | transforms         |
-| `/robot_description`                            | URDF model         |
-| `/display_planned_path`                         | RViz trajectory    |
-| `/joint_trajectory_controller/joint_trajectory` | motion commands    |
-| `/planning_scene`                               | world model        |
+Topic                                           | Meaning
+----------------------------------------------- | ------------------
+`/joint_states`                                 | actual robot state
+`/tf`                                           | transforms
+`/robot_description`                            | URDF model
+`/display_planned_path`                         | RViz trajectory
+`/joint_trajectory_controller/joint_trajectory` | motion commands
+`/planning_scene`                               | world model
 
 ### possible example
 
@@ -168,33 +169,33 @@ Be sure to master ros2 colcon with `rclpy` and `rclcpp` then use them!!!
 
 ## Navigation 2 (NAV2)
 
-The following is the github link to Nav2: [link](https://github.com/ros-navigation/navigation2?utm_source=chatgpt.com)
+The following is the github link to Nav2: [link to NAV2 github page](https://github.com/ros-navigation/navigation2?utm_source=chatgpt.com)
 
-The following is the documentation link to Nav2: [link](https://docs.nav2.org/?utm_source=chatgpt.com)
+The following is the documentation link to Nav2: [link to NAV2 documentation webpage](https://docs.nav2.org/?utm_source=chatgpt.com)
 
 ### SLAM idea by
 
-| Function           | Meaning                      |
-| ------------------ | ---------------------------- |
-| Localization       | “Where am I?”                |
-| Path Planning      | “How do I get there?”        |
-| Obstacle Avoidance | “Don’t hit things.”          |
-| Recovery Behaviors | “What if I’m stuck?”         |
-| Costmaps           | environmental representation |
-| Behavior Trees     | task sequencing              |
-| Velocity Commands  | motion execution             |
+Function           | Meaning
+------------------ | ----------------------------
+Localization       | “Where am I?”
+Path Planning      | “How do I get there?”
+Obstacle Avoidance | “Don’t hit things.”
+Recovery Behaviors | “What if I’m stuck?”
+Costmaps           | environmental representation
+Behavior Trees     | task sequencing
+Velocity Commands  | motion execution
 
 ### Topics in Nav2
 
-| Topic        | Meaning               |
-| ------------ | --------------------- |
-| `/cmd_vel`   | velocity command      |
-| `/odom`      | odometry              |
-| `/scan`      | LiDAR scan            |
-| `/imu`       | inertial measurement  |
-| `/tf`        | transforms            |
-| `/map`       | environment map       |
-| `/amcl_pose` | localization estimate |
+Topic        | Meaning
+------------ | ---------------------
+`/cmd_vel`   | velocity command
+`/odom`      | odometry
+`/scan`      | LiDAR scan
+`/imu`       | inertial measurement
+`/tf`        | transforms
+`/map`       | environment map
+`/amcl_pose` | localization estimate
 
 ## URDF comes in first
 
@@ -221,28 +222,28 @@ They are now all used across
 
 ### DH table to URDF
 
-| Classical Robotics | ROS/URDF World       |
-| ------------------ | -------------------- |
-| DH Table           | URDF joint/link tree |
-| Frames             | TF tree              |
-| Transform matrices | tf2 transforms       |
-| Kinematic chain    | robot_description    |
-| Dynamics           | inertial tags        |
-| Joint variables    | `/joint_states`      |
+Classical Robotics | ROS/URDF World
+------------------ | --------------------
+DH Table           | URDF joint/link tree
+Frames             | TF tree
+Transform matrices | tf2 transforms
+Kinematic chain    | robot_description
+Dynamics           | inertial tags
+Joint variables    | `/joint_states`
 
 ## scope
 
-| Classical Layer  | Modern Layer |
-| ---------------- | ------------ |
-| DH tables        | URDF         |
-| SE(3) transforms | TF2          |
-| Kinematics       | MoveIt       |
-| Dynamics         | ros2_control |
-| Simulation       | Gazebo/RViz  |
-| Controllers      | ROS2 nodes   |
+Classical Layer  | Modern Layer
+---------------- | ------------
+DH tables        | URDF
+SE(3) transforms | TF2
+Kinematics       | MoveIt
+Dynamics         | ros2_control
+Simulation       | Gazebo/RViz
+Controllers      | ROS2 nodes
 
-URDF tutorial for ROS [link](https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/URDF-Main.html?utm_source=chatgpt.com)
+URDF tutorial for ROS [link to URDF use from ROS](https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/URDF-Main.html?utm_source=chatgpt.com)
 
-website reference [link](https://modernrobotics.northwestern.edu/nu-gm-book-resource/foundations-of-robot-motion/)
+website reference [link to Peter Cooke's web lecture on modern robotics at NWU](https://modernrobotics.northwestern.edu/nu-gm-book-resource/foundations-of-robot-motion/)
 
-matlab import robot [link](https://www.mathworks.com/help/robotics/ref/importrobot.html?utm_source=chatgpt.com)
+matlab import robot [link to MATLAB import robot function call documentation](https://www.mathworks.com/help/robotics/ref/importrobot.html?utm_source=chatgpt.com)

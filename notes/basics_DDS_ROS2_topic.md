@@ -281,6 +281,7 @@ ROS 2 middle-ware DDS messages (middle layer coding)
     - rmw_dds_common/msg/NodeEntitiesInfo
     - rmw_dds_common/msg/ParticipantEntitiesInfo
 ```
+
 ROS Bag message (data loging using bag2 protocal?)
 
 ```text
