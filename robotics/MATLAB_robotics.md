@@ -51,6 +51,13 @@ This is the basis of all robot parts. `tform` is to extract homogenous transform
     - `joint.JointToParentTransform` (moves the current body away from *parent* joint frame)
     - `joint.ChildToJointTransform` (only with **SDH** parameterization)
 
+10. `config = homeConfiguration(robot);` This creates the forward kinematics joint space configureation.
+
+    - `config(1).JointPosition = pi/2;` moves the 1st joint
+    - `config(2).JointPosition = pi/3;` moves the 2nd joint
+    - `show(robot,config)` can show how this moves the robot.
+
+11. `tt = getTransform(robot, config, sourceframe, targetframe);` target to source relative transform (tform, se3)
 
 This concludes current status.
 
