@@ -50,4 +50,20 @@ This idea comes as the $\tau_m = k_t \cdot i(t)$, therefore it is essential to *
     - robot
     - body1 to body4
     - joint1 to joint4
-    -
+    - config = homeConfiguration (to later use to control forward kinematics)
+
+2. run `make_trajectory.m` to acquire:
+
+    - way points for all joints: `way_pt` in worksapce
+    - time points for said waypoints `time_pt` in workspace
+    - also check all the free-joint axis that is correctly added to each joint
+
+3. run `robot_dimulation.slx` to use simulink block
+
+    - use `ToWorkSpace` block to provide `out.q_log`
+    - notice this is an "output object" that is /topic /message like in ros2
+
+4. run `make_movie.m` to unpack the `out.q_log`
+
+    - use `squeeze` command to make sure q_log is 3 by 51 (due to way point assignent)
+    - use `time steps` to get the frames of video to plot each `config(1)`, `config(2)` and `config(3)` since only three free joints are avaiable
