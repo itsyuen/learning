@@ -80,3 +80,6 @@ show(robot,"Collisions","on")
 
 view(135,25)
 rotate3d on
+
+%% save robot into my_rrr_robot
+save("my_rrr_robot",'robot')

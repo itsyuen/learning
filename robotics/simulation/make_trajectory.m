@@ -51,3 +51,6 @@ way_pt = [
     0    pi/8   pi/6   pi/4   pi/8   0;     % larm_jt
     0   -pi/8  -pi/4  -pi/6    0     0      % uarm_jt
     ];
+
+%% save waypoint for 10 sec, at 3 by n matrix
+save("my_rrr_waypoint.mat",'way_pt','time_pt');
