@@ -2,8 +2,8 @@
 
 following basic [informal tutorial](https://docs.python.org/3/tutorial/) from python.org
 
-
 ## Core Mindset
+
 - Learn Python as a **clear scripting language** for automation, data handling, ROS2 tools, and quick prototyping.
 - Focus on **reading + writing useful scripts**, not memorizing everything.
 - Use Python as a bridge between MATLAB logic and C/C++ structure.
@@ -39,18 +39,23 @@ following basic [informal tutorial](https://docs.python.org/3/tutorial/) from py
 ## Instructor objectivs
 
 ### stage 1
+
 variables, if/else, loops, and functions
 
 ### stage 2
+
 list/dict, file handeling, modules
 
 ### stage 3
+
 class/oop, ROS2 python nodes, automation scripts (bash?)
 
 ### stage 4
+
 Numpy, pandas, plotting, AI tools
 
 ## example files
+
 - [ ] `hello.py`
 - [ ] `loop.py`
 - [ ] `fruit.py`
