@@ -29,8 +29,13 @@ following basic [informal tutorial](https://docs.python.org/3/tutorial/) from py
 5. Loops
     - `for loop`
     - `while loop`
+    - tie in loop with list as it uses no identifier to iterate `for names in list.something?`
 6. lists
+    - using  containers, so to understand how this is different from MATLAB `{} cell array idea`
+    - using standad library, especially OS_python, that is `using list to get all directory name/filenames`
 7. Dictionaries
+    - using dictionaries to understand `containers with structure`
+    - understand how ROS2 bags use them to package data
 8. Functions
 9. Files
 10. Classes (later stage)
@@ -64,7 +69,7 @@ Numpy, pandas, plotting, AI tools
 
 ### practice for short 15 minutes everyday
 
-## Project Objective 
+## Project Objective
 
 PYthon Basics Through PS4 Controller Integration
 

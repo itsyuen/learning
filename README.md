@@ -1,4 +1,5 @@
 # learning repo's README.md
+
 2026-05-01 *Peter Chang* update
 
 This repo's purpose is meant to be the basis for teaching and research publication
@@ -9,18 +10,22 @@ where most of the material will become either `teaching` repo's `module` or
 
 The old Matlab scripts are now moved into different directories, taylored
 towards the following:
+
 - robotics
-    - adaptive control
-    - macnum wheel vehicle dynamics control
+  - adaptive control
+  - macnum wheel vehicle dynamics control
+
 - torque control
-    - human intention
-    - assitive control
-    - distrubance estimation
+  - human intention
+  - assitive control
+  - distrubance estimation
+
 - system identification
-    - Sindy application on J/I moment of inertia online estimation
-    - Extended Kalman Filter friction ID
+  - Sindy application on J/I moment of inertia online estimation
+  - Extended Kalman Filter friction ID
+
 - Control derivation
-    - full vehicle on slope dynamics slide prevention
+  - full vehicle on slope dynamics slide prevention
 
 ### Topics arrangement
 
@@ -30,6 +35,7 @@ into a working `paper01` directory inside `publication_ws`, and reuse all result
 for more or less **editing** rather then writing....
 
 *Writing* is done here in the `learning` repo and for two seperate audiences:
+
 1. students, either graduate or undergaraduate for teaching propose
 2. peers, editors and reviewers for publication propose
 
