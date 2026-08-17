@@ -151,11 +151,11 @@ while True:
 
 This type of process appears later in:
 
--   data acquisition
--   hardware interfaces
--   servers
--   control programs
--   ROS 2 nodes
+- data acquisition
+- hardware interfaces
+- servers
+- control programs
+- ROS 2 nodes
 
 Thus, **process lifetime** is not merely a Python programming detail; it
 becomes a system architecture concept.
@@ -425,12 +425,12 @@ and finally:
 
 The next MATLAB--Python experiment can therefore begin with:
 
-1.  Start Python independently from PowerShell or VS Code.
-2.  Create `numberss` in that Python process.
-3.  Keep the Python process alive.
-4.  Start MATLAB independently.
-5.  Verify that MATLAB cannot simply access `numberss` by name.
-6.  Introduce one explicit communication mechanism to transfer the data.
+1. Start Python independently from PowerShell or VS Code.
+2. Create `numberss` in that Python process.
+3. Keep the Python process alive.
+4. Start MATLAB independently.
+5. Verify that MATLAB cannot simply access `numberss` by name.
+6. Introduce one explicit communication mechanism to transfer the data.
 
 This separates two questions that are often accidentally mixed together:
 
@@ -442,3 +442,5 @@ with it?**
 
 That distinction is fundamental to later MATLAB, ROS 2, embedded, and
 distributed-system development.
+
+## Python and MATALB in same computer
